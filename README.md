@@ -1,29 +1,18 @@
-# 8-puzzle-solver
-An AI project 8 puzzle solver which solves the 8 puzzle using 3 different algorithms DFS , BFS ,A* the project is written in python using oop ,GUI ,you shuffle it first as you want click start and choose solving algorithm
+# EightPuzzleSolver
+<p align='center'><img src='https://github.com/Kallaf/8-puzzle-solver/blob/master/screenshots/demo.gif'/></p>
 
-## Screenshots
+## About 8-Puzzle Game
+An instance of the 8-puzzle game consists of a board holding 8 distinct movable
+tiles, plusan empty space. For any such board, the empty space may be legally
+swapped with any tile horizontally or vertically adjacent to it. In this assignment,
+the blank space is going to be represented by the number 0. Given an initial state
+of the board, the search problem is to find a sequence of moves that tran-sitions
+this state to the goal state; that is, the configuration with all tiles arranged in
+ascending order 0,1,2,3,4,5,6,7,8 .
 
-#### Startpage
+## Supported Algorithms:
+- **Breadth First Search (BFS)**: It is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node).
 
-![Screenshot](https://github.com/Kallaf/8-puzzle-solver/blob/master/screenshots/startPage.png?raw=true)
+- **Depth First Search (DFS)**:  It is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
 
-#### Startpage after being shuffled by user
-
-![Screenshot](https://github.com/Kallaf/8-puzzle-solver/blob/master/screenshots/startPageShuffled.png?raw=true)
-
-
-#### Choose one of the four searching techniques
-
-![Screenshot](https://github.com/Kallaf/8-puzzle-solver/blob/master/screenshots/choosingTechniquePage.png?raw=true)
-
-#### Results
-
-use the buttons ***END***,***BEGINNING***,***PREVIOUS*** and ***NEXT*** to traverse the solution 
-
-##### At step 0
-
-![Screenshot](https://github.com/Kallaf/8-puzzle-solver/blob/master/screenshots/resultsBeginning.png?raw=true)
-
-##### At final step (Arranged)
-
-![Screenshot](https://github.com/Kallaf/8-puzzle-solver/blob/master/screenshots/resultsEnd.png?raw=true)
+- **A Star Search (A\*)**: It is a graph traversal and path search algorithm, which is often used in computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its. space complexity, as it stores all generated nodes in memory (Tried out both **Eculidean** and **Manhattan** distance metrics for heuristics).
